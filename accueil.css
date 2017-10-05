@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'GeosansLight';
+    src: url('GeosansLight.ttf') format('truetype');
+}
+
+*{
+    font-family: 'GeosansLight';
+}
+
+
+header {
+	margin-top : 50px;
+	text-align:center;
+}
+
+nav > ul {
+	margin-top: 40px;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+nav li {
+	display: inline-block;
+	position: relative;
+	width: 300px;
+	height: 60px;
+}
+
+nav a {
+	margin-left : 20px;
+	color : #777777;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	position : relative;
+	z-index:2;
+	transition-duration:0.3s;
+}
+
+nav a:hover {
+	color: #111111;
+	transition-duration: 0.6s;
+}
+
+
+
+#home {
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+}
+
+#about {
+	margin-top : 40px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color : #222222;
+	font-size: 17px;
+	font-family: 'GeosansLight';
+}
+
+#guig {
+	width : 60%;
+	height : auto;
+	max-width : 300px;
+	border-radius :10px;
+
+}
+
+#cv {
+	text-decoration: none;
+	color : #222222;
+}
+
+#contact {
+	margin-top: 40px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color : #222222;
+	font-size: 17px;
+	font-family: 'GeosansLight';
+}
+
+.champ {
+	width: 90%;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	display : block;
+	margin-top : 7px;
+	background-color: #eeeeee;
+	border:0px;
+	padding-left:3px;
+	font-size : 18px;
+}
+
+input {
+	height : 30px;
+}
+
+textarea {
+	height: 80px;
+	resize:none;
+}
+
+input,textarea:focus {
+	outline: none;
+}
+
+#send {
+	display : block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color : #999999;
+	border:0px;
+	margin-top : 10px;	
+	color:white;
+	font-size : 16px;
+}
+
+footer {
+	position : relative;
+	margin-top : 145px;
+	text-align : center;
+	font-size: 14px;
+}
+
+footer > a {
+	margin-right : 20px;
+}
+
+p {
+    margin-top : 40px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color : #222222;
+    font-size: 17px;
+    font-family: 'GeosansLight';
+}
+
+.plusGrand {
+    font-size: 20px; !important;
+}
+
+.plusLarge {
+    width: 80%;
+}
+
+#enSavoirPlus {
+    border: 2px solid green;
+    width: 20%;
+    right: 0;
+    margin-right: 3%;
+    border-radius: 13px;
+    position: fixed;
+    top: 35%;
+    z-index: 5;
+}
+
+#enSavoirPlus * {
+    font-size: 17px;
+}
+
+.p_enSavoirPlus {
+    width: 85%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 27px;
+    text-decoration: underline;
+}
+
+h5 {
+    font-size: 21px;
+}
+
+.sousMenu {
+    width: 20%;
+    margin: auto;
+    display: none;
+}
+
+.apparaitreSousMenu:hover .sousMenu {
+    display: block;
+}
+
+#sousMenuProjet {
+    list-style: none;
+}
+
+#sousMenuProjet a {
+    color : #777777;
+    font-size: 14px;
+    text-decoration: none;
+    transition-duration:0.3s;
+}
+
+#sousMenuProjet a:hover {
+    color: #111111;
+    transition-duration: 0.6s;
+}
+
+#sommaire {
+    border: 2px solid gray;
+    width: 20%;
+    position: fixed;
+    left: 25px;
+    border-radius: 13px;
+    top: 45%;
+}
+
+#sommaire a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#sommaire li {
+    text-align: left;
+}
+
+table {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 500px;
+    text-align: center;
+}
+
+h1#ancre_dl {
+    margin-top: 400px;
+}
+
+@media screen and (max-width: 1400px) {
+
+    #enSavoirPlus {
+        display: block;
+        position: inherit;
+        margin: auto;
+        width: 50%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+
+    #sommaire {
+        display: block;
+        position: inherit;
+        margin: auto;
+        width: 70%;
+        margin-top: 0;
+    }
+
+    #img_solution {
+        width: 400px;
+    }
+}
+
+#img_tests {
+    width: 460px;
+}
+
+#problematique {
+    margin-top: 100px;
+}
+
+.link {
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+}
+
+.link_dl {
+    font-size: 19px;
+}
+
+.vert {
+    color: green;
+}

@@ -1,0 +1,243 @@
+<html><head>
+	<meta charset="utf-8">
+	
+	<title>VISIOMATHS | Projet Tansdisciplinaire</title>
+	<meta name="description" content="Site de présentation du projet visiomaths">
+	<meta name="author" content="Hadrien Barbat">
+	<meta http-equiv="content-language" content="fr">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	<meta property="og:title" content="VISIOMATHS | Projet Tansdisciplinaire">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="LogoAccueil.JPG">
+	<link rel="stylesheet" type="text/css" href="accueil.css" />
+    <link rel="shortcut icon" href="img/visio.ico">
+	<script src="jquery.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#about").fadeOut();
+        $("#problematique").fadeOut();
+		$("#contact").fadeOut();
+		$("#menuHome").click(function(){
+			$("#home").fadeIn();
+			$("#about").fadeOut();
+			$("#contact").fadeOut();
+            $("#problematique").fadeOut();
+		});
+		$("#menuAbout").click(function(){
+			$("#home").fadeOut();
+			$("#about").fadeIn();
+			$("#contact").fadeOut();
+            $("#problematique").fadeOut();
+		});
+	
+		$("#menuContact").click(function(){
+			$("#home").fadeOut();
+			$("#about").fadeOut();
+			$("#contact").fadeIn();
+            $("#problematique").fadeOut();
+		});
+
+        $("#menuProblematique").click(function(){
+            $("#home").fadeOut();
+            $("#about").fadeOut();
+            $("#problematique").fadeIn();
+            $("#contact").fadeOut();
+        });
+
+        $("#access_planVert").click(function(){
+            $("#home").fadeOut();
+            $("#about").fadeOut();
+            $("#problematique").fadeIn();
+            $("#contact").fadeOut();
+        });
+
+        $('a.scroll').on('click', function(evt){
+            evt.preventDefault();
+            var target = $(this).attr('href');
+            $('html, body')
+                    .stop()
+                    .animate({scrollTop: $(target).offset().top}, 1000 );
+        });
+	});
+	</script>
+	</head>
+	
+	<header>
+		<img alt="Logo du projet Visiomaths" src="img/LogoAccueil.JPG" width="600px">
+		<nav>
+			<ul>
+                <li><a href="#" id="menuProblematique"><h1>La problématique</h1></a></li>
+				<li><a href="#" id="menuHome"><h1>Notre solution</h1></a></li>
+				<li class="apparaitreSousMenu"><a href="#" id="menuAbout"><h1>Notre démarche</h1></a></li>
+				<li><a href="#" id="menuContact"><h1>L'équipe</h1></a></li>
+            </ul>
+		</nav>
+	</header>
+	
+	<body>
+
+
+        <aside id="enSavoirPlus">
+            <h3 style="font-size: 1.8em;">En savoir plus ?</h3>
+            <p class="p_enSavoirPlus">
+                Notre projet contribue à rendre accessible l’éducation (en particulier les études scientifiques) pour les personnes non et mal voyantes. Cette démarche va de pair avec la <a href="https://informations.handicap.fr/decret-loi-fevrier-2005.php">loi pour l’égalité des chances</a> du 11 février 2005.
+            </p>
+            <p class="p_enSavoirPlus">
+                Plusieurs outils et organismes existent déjà :<br>
+                <ul>
+                    <li><a href="http://www.nvda-fr.org/">NVDA</a> lecteur d’écran gratuit</li>
+                    <li><a href="http://www.giaa.org">GIAA</a> Groupement des intellectuels aveugles ou amblyopes</li>
+                    <li><a href="http://www.inja.fr/">INJA</a> Institut national des jeunes aveugles</li>
+                    <li><a href="http://www.inja.fr/AgendaCulturel/ViewDocument.ashx?INSTANCE=EXPLOITATION&ID=71&ext=.jpg">Notation mathématique en braille</a></li>
+                    <li><a href="http://www.unadev.com/">UNADEV</a> Union nationale des aveugles et déficients visuels</li>
+                </ul>
+            </p>
+            <p class="p_enSavoirPlus"><a id="access_planVert" href="#ancre_planVert">Cliquez ici</a> pour avoir plus d'informations sur le <span class="vert">plan vert</span></p>
+        </aside>
+
+        <div id="problematique">
+            <h1>L'accessibilité à l'éducation pour les personnes<br> en situation de handicap</h1>
+            <p class="plusGrand">On compte aujourd’hui en France plus de 16 000 jeunes en situation de handicap poursuivant des études supérieures. Beaucoup d’entre eux, et en particulier les non et mal voyants, son contraints de s’orienter vers des filières courtes à cause du manque de dispositifs adaptés.</p>
+            <p class="plusGrand">Ce projet nous a été proposé par notre client François Demontoux, enseignant à l'université de Bordeaux. Ce dernier participe activement à des projets répondant à la problématique de l'accessibilité de l'enseignement pour les étudiants en situation de handicap.<br> Il nous a été demandé d'identifier le besoin de personnes non voyantes, ainsi que des enseignants, afin de présenter une méthodologie efficace permettant de décomposer des formules mathématiques complexes.</p>
+            <p class="plusGrand">De ce fait, ce projet se situe dans un contexte d'accessibilité à l'éducation pour tous, et d'égalité des chances.</p>
+
+            <h1>La problématique</h1>
+            <p class="plusGrand">Ce site présente la méthodologie que nous avons élaboré, à destination des enseignants souhaitant rendre leurs cours accessibles aux non voyants.</p>
+
+            <h1 id="ancre_planVert">Plan vert</h1>
+            <p class="plusGrand">Le plan vert allie développement durable et enseignement supérieur.<br>Notre projet permettant d'appliquer une loi relative à l'égalité des chances dans l'enseignement, celui-ci s'incrit répond totalement aux objectifs du plan vert.<br>De plus, nos perspectives portent sur l'utilisation du lecteur NVDA, qui est un logiciel libre. Cela permet une promotion des logiciels libres, qui ont l'avantage d'être gratuits et modifiables par tout le monde. Cela permet aussi de rompre avec les démarches commerciales des lecteurs d'écrans payants, qui s'avèrent extrêmement contraignantes pour les personnes non-voyantes qui les utilisent.</p>
+        </div>
+
+		<div id="home">
+            <h1>Notre solution</h1>
+            <p class="plusGrand">La méthodologie que nous avons développé permet de décrire une formule mathématique afin de la rendre lisible et facile à manipuler pour une personne non-voyante.</p>
+            <p class="plusGrand"><a class="link" href="docs/guide_methodo.pdf">Téléchargement guide méthodologique</a></p>
+            <p class="plusGrand">Le but est d'améliorer la compréhension des formules mathématiques grâce à un système d’indentations.</p>
+            <p class="plusGrand">Grâce au système d’indentation, la personne peut se rendre compte de la profondeur de la formule, et concentrer son travail sur un bloc plutôt qu’un autre. Voici un exemple d’utilisation de la méthode :</p>
+            <p class="plusGrand"><img id="img_solution" src="img/solution.png" alt="rendu de notre solution: transformation d'une équation en forme indentée compréhensible par une personne non ou mal voyante"></p>
+            <p class="plusGrand">Nous souhaitons remercier l’antenne d’Aquitaine de l’organisme GIAA pour son aide précieuse et ses renseignements au cours de ce projet.</p>
+
+        </div>
+		
+		<div id="about">
+            <div id="sommaire">
+                <h1>Notre démarche</h1>
+                <ul>
+                    <li><a class="scroll" href="#ancre_contexte">Contexte</a></li>
+                    <li><a class="scroll" href="#ancre_demarche">Nos recherches</a>
+                        <ul>
+                            <li><a class="scroll" href="#ancre_tactile">Outils tactiles</a>
+                                <ul>
+                                    <li><a class="scroll" href="#ancre_brailleMaths">Braille mathématique</a></li>
+                                    <li><a class="scroll" href="#ancre_plageBraille">Plage Braille</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="scroll" href="#ancre_auditif">Outils auditifs</a></li>
+                            <li><a class="scroll" href="#ancre_temoignage">Témoignages</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="scroll" href="#ancre_planTest">Plans de tests et perspectives</a></li>
+                    <li><a class="scroll" href="#ancre_dl">Téléchargements</a></li>
+                </ul>
+            </div>
+            <h1 id="ancre_contexte">Contexte</h1>
+            <p class="plusGrand plusLarge">On compte aujourd’hui en France plus de 16 000 jeunes en situation de handicap poursuivant des études supérieures. Beaucoup d’entre eux, et en particulier les non et mal voyants, son contraints de s’orienter vers des filières courtes à cause du manque de dispositifs adaptés dès le collège ou le lycée.</p>
+            <p class="plusGrand plusLarge">Dans le contexte d’un projet de groupe de première année d’école d’ingénieur, quatre étudiants de l’ENSC de Bordeaux ont élaboré une méthodologie permettant de décomposer les formules mathématiques complexes, pour les rendre plus accessibles.<br><br> <a class="link" href="docs/cdc_VisioMath.pdf">Voir notre cahier des charges</a></p>
+            <p class="plusGrand plusLarge">Cette méthode peut être utilisée par les professeurs souhaitant rendre leurs cours accessibles. Les étudiants pourront ainsi comprendre et manipuler les formules mathématiques via un lecteur d’écran, ou documents braille.</p>
+            <br><br>
+
+
+            <h1 id="ancre_demarche">Nos recherches</h1>
+            <p class="plusGrand plusLarge">Nous avons commencé notre projet par une recherche de l’existant. Les outils à disposition des personnes mal-voyantes les plus utilisés sont :</p>
+
+            <h4 id="ancre_tactile">Outils tactiles</h4>
+            <h5 id="ancre_brailleMaths">Braille mathématique</h5>
+            <p class="plusGrand plusLarge">Le braille se présente comme un alphabet de points en relief. On le lit en parcourant du doigt un texte, ligne par ligne. Chaque caractère est constitué de 6 points, présentés en 2 colonnes de 3 points. Il existe donc 63 combinaisons différentes.</p>
+            <p class="plusGrand plusLarge">Les mathématiques telles que nous les connaissons présentent un vaste nombre de signes et de symboles. En plus des différents chiffres, il faut également prendre en compte les opérateurs arithmétiques, les symboles d’inégalité, les lettres grecques, les inconnues au sein des équations, les parenthèses, etc.Il est impossible de retranscrire tous ces symboles à l’aide de seulement 63 combinaisons, c’est pourquoi certains symboles sont représentés en braille mathématique par la combinaison de 2 ou 3 caractères braille.</p>
+            <p class="plusGrand plusLarge">Le braille mathématique a pour spécificité de linéariser les formules mathématiques,qui sont toujours présentées « en ligne », quel que soit le nombre d’étages que présente la formule initiale. Par exemple, un exemple d'une linéarisation d'une simple équation : <img src="img/equation.png" alt="L'équation '2 tiers est égal 4 sixièmes' sous une forme braille">.</p>
+            <p class="plusGrand plusLarge">Cette linéarisation implique un ajout de beaucoup de parenthèses, ce qui les des formules mathématiques plus difficiles à lire, et à manipuler</p>
+
+            <h5 id="ancre_plageBraille">Plage braille</h5>
+            <img style="border-radius: 40px;width: 500px;" src="img/plageBraille.jpg" alt="image d'une plage braille">
+            <p class="plusGrand plusLarge">C’est un dispositif permettant d’afficher des caractères braille parcourus sur une page web. Il peut être très utile pour lire des textes, mais dans le cas de formules mathématiques son utilisation est très difficile.</p>
+            <p class="plusGrand plusLarge">La linéarisation des formules en braille les rallonge considérablement, et elles ne peuvent ainsi plus rentrer dans le nombre de caractères autorisés par le plage braille. Dans d’autres cas, le braille mathématique nécessite un affichage en deux dimensions, comme pour les tableaux de signes. Ils deviennent ainsi illisibles sur cette technologie.</p>
+            <img src="img/tableau_variation.png" alt="Transcription d'un tableau de variations en braille">
+
+            <h4 id="ancre_auditif">Outils auditifs</h4>
+            <p class="plusGrand plusLarge">Plus adaptés à l’ère du numérique, les lecteurs d’écrans sont des logiciels intégrés à l’ordinateur qui  “transcrivent oralement” un document. Les deux plus courant sont Jaws et NVDA.</p>
+            <p class="plusGrand plusLarge">Jaws fonctionne sous Windows. Il coûte 1600€ à l’achat, mais ce prix peut être “soulagé” par des aides, notamment la PCH (Prestation de Compensation du Handicap) délivré par la MDPH (Maison Départementale des Personnes Handicapées). Cet argent provient des amendes que doivent payer les entreprises ne respectant pas leur quota de personnes handicapées.</p>
+            <p class="plusGrand plusLarge">NVDA, logiciel plus récent, fonctionne sous Linux mais, contrairement à Jaws, est gratuit. Il est tout aussi efficace que Jaws, et il est en open source.</p>
+            <p class="plusGrand plusLarge">Ces lecteurs d’écrans sont très performants pour lire du texte. Mais comment lire une formule mathématique ? Une image ?</p>
+            <p class="plusGrand plusLarge">On comprend l’importance de légender les images (ou pour les programmeurs web, de décrire l’image dans l’attribut alt de la balise img comme suit : &lsaquo;img src=”lien” alt=”description”> ).</p>
+            <p class="plusGrand plusLarge">Pour que le lecteur d’écran puisse lire la formule mathématique, il faut la décrire en français le plus clairement possible. C’est justement pour cette description que nous proposons une méthode.</p>
+
+            <h4 id="ancre_temoignage">Témoignages</h4>
+            <p class="plusGrand plusLarge">Nous avons au cours de ce projet recueilli le témoignage d’un étudiant mal-voyant, rencontré des personnes non-voyantes de l’organisme GIAA et effectué un sondage sur plus de 35 professeurs. De ces rencontres nous avons compris qu’il est très difficile pour un étudiant en situation de handicap visuel d’avoir accès aux enseignements scientifiques de niveau supérieur, d’une part parce que les enseignants n’y sont, pour certains, pas sensibilisés, et d’autre part par manque de méthode. Par notre projet nous voulons sensibiliser les professeurs tout en leur proposant une méthode pratique et compréhensible de décomposition de formules.</p>
+            <br><br>
+            <img style="width: 340px;" src="img/temoignage1.png" alt="Diagramme relatif à la sensibilisation des professeurs">
+            <img style="width: 430px;" src="img/temoignage2.png" alt="Diagramme d'approbation d'une éventuelle formation à l'accessibilité">
+            <p class="plusGrand plusLarge">Voici les résultats d'un sondage que nous avons éffectué sur des professeurs.</p>
+            <p class="plusGrand plusLarge"><a class="link" href="docs/etat_art.pdf">Lien vers notre état de l'art</a></p>
+            <br><br><br><br>
+
+            <h1 id="ancre_planTest">Plans de tests et perspectives</h1>
+            <p class="plusGrand plusLarge">Nous avons mis en place des tests afin de vérifier si cette méthode répond à nos attentes, et pouvoir la corriger. Ces tests portent sur deux dimensions importantes :</p>
+            <img src="img/image_tests.png" alt="Schéma du plan de tests" id="img_tests">
+            <p class="plusGrand plusLarge">Étudiants : la compréhension des formules mathématiques par les étudiants non voyants doit être meilleure avec notre méthode qu’avec les méthodes classiques</p>
+            <p class="plusGrand plusLarge">Professeurs : les professeurs doivent pouvoir appliquer simplement notre méthode, sans réaliser d’erreurs et sans que cela leur soit trop contraignant</p>
+            <p class="plusGrand plusLarge">Voici le plan de tests que nous avons établi, ainsi que les ressources nécessaires :</p>
+            <a class="link" href="docs/plan_test.pdf">plan de tests</a>  <a class="link" href="docs/Ressources_tests.pdf">ressources</a>
+            <p class="plusGrand plusLarge">Nous espérons que ce projet sera repris par la suite, et diffusé à un public large. L’accès aux mathématiques ne doit pas être réservé qu’à certains, et nous souhaitons à travers notre démarche sensibiliser les professeurs de tous les niveaux. Si ce projet vous intéresse ou si vous avez besoin de renseignements, n’hésitez pas à nous contacter dans la rubrique “A propos”.</p>
+            <br><br><br>
+
+            <h1 id="ancre_dl">Téléchargements</h1>
+            <table>
+                <tr>
+                    <td><a class="link_dl" href="docs/cdc_VisioMath.pdf">Cahier des charges</a></td>
+                </tr>
+                <tr>
+                    <td><a class="link_dl" href="docs/etat_art.pdf">État de l'art</a></td>
+                </tr>
+                <tr>
+                    <td><a class="link_dl" href="docs/guide_methodo.pdf">Guide méthodologique</a></td>
+                </tr>
+                <tr>
+                    <td><a class="link_dl" href="docs/plan_test.pdf">Plan de tests</a></td>
+                </tr>
+                <tr>
+                    <td><a class="link_dl" href="docs/Ressources_tests.pdf">Ressources des tests</a></td>
+                </tr>
+            </table>
+        </div>
+		
+		<div id="contact">
+            <h1>L'équipe</h1>
+            <p class="plusGrand">Visiomaths est un projet lancé en 2016 par quatre étudiants de l’ENSC, école nationale supérieure de cognitique de Bordeaux, en collaboration avec François Demontoux, enseignant à l’université de Bordeaux.</p>
+            <p class="plusGrand">Nous proposons une méthode de décomposition de formules mathématiques complexes, afin de les rendre accessibles aux étudiants non et mal voyants.</p>
+            <img style="border-radius: 40px;width: 500px;" src="img/equipe.JPG" alt="photo des membres de l'équipe">
+            <br><br><br>
+            <img alt="avion " src="img/avion.png" id="avion">
+			<h1>Contact</h1>
+			<p>visiomaths@ensc.fr</p>
+			<form action="mail.php" method="post">
+				<input class="champ" type="text" name="nom" id="nom" placeholder="Name" required />
+				<input class="champ" type="email" name="email" id="email" placeholder="Email" required />
+				<input class="champ" type="text" name="subject" id="subject" placeholder="Subject" required />
+				<textarea class="champ" type="text" name="message" id="message" placeholder="Message" required></textarea>
+				<input id="send" type="submit" value="Send" />
+			</form>
+		</div>
+	</body>
+		
+	<footer>
+		<p>© 2016 by Ariane Parissis - Josias Lévi Alvarès - Pierre Lemaire - Hadrien Barbat</p>
+	</footer>
+
+<!--
+        // Rappel sujet, etat de l'art, questionnaire, synthetise : quels objectifs la solution doit replir
+        // Expérience : se rendre compte de la difficulté : dire aux gens de prendre une feuille et d'ecrire la formule de la page d'accueil
+ -->
+</html>
+
+
